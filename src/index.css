@@ -1,12 +1,27 @@
-body {
-  background: url("/rose_border.png");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Rouge+Script&display=swap');
+
+:root {
+  --font-size: 26px;
+  --font-primary: #555555;
 }
 
-@media screen and (max-width: 500px) {
+body {
+  background: url("/rose_border.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: 'EB Garamond', serif;
+  color: var(--font-primary);
+  font-size: var(--font-size);
+  /* font-family: 'Rouge Script', cursive; */
+}
+
+.usPic {
+
+}
+
+/* @media screen and (max-width: 500px) {
   body {
     background-size: contain;
   }
-}
+} */
