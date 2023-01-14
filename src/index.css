@@ -1,0 +1,12 @@
+body {
+  background: url("rose_border.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-size: contain;
+  }
+}
