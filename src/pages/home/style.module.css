@@ -1,9 +1,31 @@
+section.announcement {
+  margin-bottom: calc(var(--space) * 16);
+}
+
 .title {
   font-family: 'Rouge Script', cursive;
   font-size: calc(var(--font-size) * 8);
+  position: relative;
 }
 
-.usPic {
+.title:before {
+  content: "Celebrating the marriage of";
+  text-transform: capitalize;
+  position: absolute;
+  width: 100%;
+  font-size: 1.75rem;
+  top: -75px;
+  left: 0;
+  /* font-family: initial; */
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Rouge Script', cursive;
+  font-size: calc(var(--font-size) * 6);
+}
+
+.us-pic {
   height: 350px;
   max-width: 100%;
   position: relative;
@@ -13,13 +35,13 @@
   box-sizing: border-box;
 }
 
-.usPic img {
+.us-pic img {
   width: 100%;
   max-width: 500px;
   margin-right: -10%;
   /* height: auto; */
 }
-.usPic:after {
+.us-pic:after {
   content  : "";
   position : absolute;
   z-index  : 1;
@@ -33,21 +55,42 @@
   height   : 4em;
 }
 
+section.cruise {
+  background-image: url('../../assets/alaska_cruise_juneau.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: calc(var(--space) * 12) 0;
+}
+
 @media screen and (max-width: 1500px) {
   .title {
     font-size: calc(var(--font-size) * 4);
   }
+  .heading {
+    font-size: calc(var(--font-size) * 3);
+  }
 }
 @media screen and (max-width: 600px) {
-  .usPic {
+  .us-pic {
     height: 250px;
+  }
+  section.cruise {
+    padding: calc(var(--space) * 8) 0;
   }
 }
 @media screen and (max-width: 400px) {
   .title {
     font-size: calc(var(--font-size) * 3);
   }
-  .usPic {
+  .heading {
+    font-size: calc(var(--font-size) * 2);
+  }
+  section.cruise {
+    padding: calc(var(--space) * 6) 0;
+  }
+  .us-pic {
     height: 175px;
   }
 }

@@ -4,10 +4,15 @@ import "./App.css";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      <footer>
+        Made with love by Lee because Kenna told me to.
+      </footer>
+    </>
   );
 }
 

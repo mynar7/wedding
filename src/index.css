@@ -3,6 +3,7 @@
 :root {
   --font-size: 26px;
   --font-primary: #555555;
+  --space: 16px;
 }
 
 body {
@@ -14,14 +15,5 @@ body {
   color: var(--font-primary);
   font-size: var(--font-size);
   /* font-family: 'Rouge Script', cursive; */
+  margin: 0;
 }
-
-.usPic {
-
-}
-
-/* @media screen and (max-width: 500px) {
-  body {
-    background-size: contain;
-  }
-} */

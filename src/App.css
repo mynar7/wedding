@@ -1,7 +1,17 @@
-#root {
+.container, .container-fluid {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+.container-fluid {
+  max-width: none;
+  padding: none;
+}
+
+footer {
+  font-family: 'Rouge Script', cursive;
+  text-align: center;
+  padding: calc(var(--space) * 8) 0;
+}
