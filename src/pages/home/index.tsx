@@ -52,7 +52,7 @@ export default function Home() {
         <h2 className={style.heading}>Venue</h2>
       </section>
       <section className={'container'}>
-        <p>Join us aboard the Disney Wonder&trade; on a 7-night Alaska Cruise from Vancouver.</p>
+        <p>Join us aboard the Disney Wonder&trade; on a 7-night Alaskan Cruise from Vancouver.</p>
         <p>Dates: Monday, September 4<sup>th</sup> through Monday, September 11<sup>th</sup>, 2023.</p>
         <a href="https://disneycruise.disney.go.com/cruises-destinations/list/DW1989/7-Night-Alaskan-Cruise-from-Vancouver/2023-09-04-Disney-Wonder/">Details and booking information for the cruise can be found at this link.</a>
       </section>
