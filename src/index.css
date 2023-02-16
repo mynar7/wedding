@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("/rose_border.png");
+  background: url("./assets/rose_border.png");
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;

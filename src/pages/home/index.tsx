@@ -1,6 +1,4 @@
 import style from './style.module.css'
-import escapePic from '../../assets/escape_room.png'
-
 
 // Disney Wonder
 // Monday, September 4-Monday, September, 11th, 2023 to Alaska out of Vancouver, BC Canada Cruise Terminal
@@ -45,7 +43,7 @@ export default function Home() {
         <p>SEPT 5<sup>th</sup>, 2023 at 3:00 PM aboard the Disney Wonder&trade;.</p>
         <p>{daysToGo(goTime)}</p>
         <div className={style.usPic}>
-          <img src={escapePic} alt="Makenna & Lee" />
+          <img src='/escape_room.png' alt="Makenna & Lee" />
         </div>
       </section>
       <section className={[style.cruise, 'container-fluid'].join(" ")}>
@@ -56,6 +54,12 @@ export default function Home() {
         <p>Dates: Monday, September 4<sup>th</sup> through Monday, September 11<sup>th</sup>, 2023.</p>
         <a href="https://disneycruise.disney.go.com/cruises-destinations/list/DW1989/7-Night-Alaskan-Cruise-from-Vancouver/2023-09-04-Disney-Wonder/">Details and booking information for the cruise can be found at this link.</a>
       </section>
+      <section className={[style.details, 'container-fluid'].join(" ")}>
+        <div className={style.col}></div>
+        <div className={style.col}></div>
+        <div className={style.col}></div>
+      </section>
+
     </>
   )
 }
