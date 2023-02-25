@@ -1,5 +1,5 @@
 import style from './style.module.css'
-
+import gross from '../../assets/lee_and_kenna.jpg'
 // Disney Wonder
 // Monday, September 4-Monday, September, 11th, 2023 to Alaska out of Vancouver, BC Canada Cruise Terminal
 // **Website: 7-Night Alaskan Cruise from Vancouver on Disney Wonder on September 4, 2023 | Disney Cruise Line
@@ -58,6 +58,17 @@ export default function Home() {
         <div className={style.col}></div>
         <div className={style.col}></div>
         <div className={style.col}></div>
+      </section>
+      <section className={'container'}>
+        <h2 className={style.heading}>Reception</h2>
+        <img src={gross} className={style.gross} alt="Kenna and I making a face telling you NO" />
+        <p>Did you make a face after you clicked the cruise link?</p>
+        <p>Did you think:</p>
+        <blockquote><em>Wow, they think we can afford a cruise just to see them get married? They've lost their little minds.</em></blockquote>
+        <p>It's OK. We made a similar face looking at cruise prices, flights, and hotels.</p>
+        <p>We don't expect everyone is going to want to fly across the country, get a passport, and float to Juneau just to see us get hitched.</p>
+        <p>We wanted to do something special, and we realize it's not something everyone can attend.</p>
+        <p>So for that reason, we plan to have a reception sometime in January or February 2024 so everyone can come and celebrate our marriage. It will probably be in Orlando, FL so Kenna can take pictures at Disney. We'll post details here on the site when we have them.</p>
       </section>
 
     </>

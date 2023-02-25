@@ -55,6 +55,22 @@ h2 {
   height   : 4em;
 }
 
+.gross {
+  float: left;
+  border-radius: 1000px;
+  shape-outside: circle();
+  height: auto;
+  max-width: 500px;
+  width: 50%;
+  margin-right: calc(var(--space) * 8);
+}
+section:has(.gross) {
+  overflow: auto;
+}
+section:has(.gross) :not(h2) {
+  text-align: left;
+}
+
 section.cruise {
   background-image: url('../../assets/alaska_cruise_juneau.jpg');
   background-position: center;
@@ -78,6 +94,11 @@ section.cruise {
   }
   section.cruise {
     padding: calc(var(--space) * 8) 0;
+  }
+  .gross {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 400px) {
