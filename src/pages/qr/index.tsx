@@ -8,7 +8,7 @@ export default function Qr() {
     },
     {
       name: 'Matt',
-      url: '?recipient=the%20paleontologist'
+      url: '?recipient=the%20paleontologist&gift=1'
     },
     {
       name: 'Ryan',
@@ -16,19 +16,19 @@ export default function Qr() {
     },
     {
       name: 'Oscar',
-      url: '?recipient=the%20roommate'
+      url: '?recipient=the%20roommate&gift=1'
     },
     {
       name: 'Zane',
-      url: '?recipient=the%20dungeon%20master'
+      url: '?recipient=the%20dungeon%20master&gift=1'
     },
     {
       name: 'Scott',
-      url: '?recipient=muh%20best%20friend'
+      url: '?recipient=muh%20best%20friend&gift=1'
     },
     {
       name: 'Eddie',
-      url: '?recipient=the%20co%20host'
+      url: '?recipient=the%20co%20host&gift=1'
     },
   ]
   return (
