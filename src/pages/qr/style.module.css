@@ -16,3 +16,7 @@
   display: block;
   margin: auto;
 }
+.qr-container a {
+  color: inherit;
+  text-decoration: none;
+}

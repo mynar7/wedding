@@ -35,7 +35,7 @@ export default function Qr() {
     <div className={style.qrContainer}>
       {groomGiftRecipients.map(({name, url}, i) => (
         <div key={i}>
-          <p>{name}, scan this:</p>
+          <p><a href={`https://warrickwedding.com/groomsmen${url}`}>{name}</a>, scan this:</p>
           <img src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://warrickwedding.com/groomsmen${url}`} alt={`QR Code for URL for ${name}`}/>
         </div>
       ))}
