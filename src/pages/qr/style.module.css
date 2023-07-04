@@ -6,8 +6,8 @@
   flex-wrap: wrap;
 }
 .qr-container > div {
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 500px;
 }
 .qr-container p {
   text-align: center;
