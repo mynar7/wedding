@@ -73,6 +73,16 @@ export default function Groomsmen() {
             <p>Also, your D&D campaigns are dope.</p>
           </section>
         )
+      case 'the co host':
+        return (
+          <section className={[style.announcement, 'container'].join(" ")}>
+            <h2 className={style.friend}>Eddie</h2>
+            <h3>🎙️💻🍻</h3>
+            <p>Thanks for coming to my bachelor party.</p>
+            <p>It sucks you can't come to the wedding, but it was good to see you in Colombia at the very least.</p>
+            <p>Side note: We shouldn't give up on the podcast, my dude.</p>
+          </section>
+        )
       default:
         const gift = params.get('gift')
         return <Navigate to={`/groomsmen${gift ? "?gift=" + gift : ""}`}/>
