@@ -57,7 +57,7 @@ section.announcement {
     font-size: calc(var(--font-size) * 3);
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .logo-container img {
     margin: -20px -100px;
   }

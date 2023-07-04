@@ -7,7 +7,7 @@ export default function Groomsmen() {
   const [params] = useSearchParams() 
   function getMessage() {
     switch(params.get('recipient')) {
-      case 'muh best friend':
+      case 'muhbestfriend':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Scott</h2>
@@ -20,7 +20,7 @@ export default function Groomsmen() {
             <p>It sucks we don't live closer, but let's not make my bachelor party the last time we get together. Keep in touch dude. At the very least let's fucking play some computer games or something... GOD!</p>
           </section>
         )
-      case 'the bad influence':
+      case 'thebadinfluence':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Matthew</h2>
@@ -31,7 +31,7 @@ export default function Groomsmen() {
             <p>My dad has always said you were a bad influence, but I think if you weren't my cousin I would have grown up to be an insufferable stick in the mud that doesn't know how to have fun and bend the rules here and there.</p>
           </section>
         )
-      case 'the roommate':
+      case 'theroommate':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Oscar</h2>
@@ -42,7 +42,7 @@ export default function Groomsmen() {
             <p>It sucks we don't live closer, but let's not make my bachelor party the last time we get together. Keep in touch dude.</p>
           </section>
         )
-      case 'the paleontologist':
+      case 'thepaleontologist':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Matt</h2>
@@ -53,7 +53,7 @@ export default function Groomsmen() {
             <p>Maya, however, is terrible and Elsa is the best.</p>
           </section>
         )
-      case 'the weight lifter':
+      case 'theweightlifter':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Ryan</h2>
@@ -63,7 +63,7 @@ export default function Groomsmen() {
             <p>Also, thanks for helping me feel more sane about this family I'm marrying into.</p>
           </section>
         )
-      case 'the dungeon master':
+      case 'thedungeonmaster':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Zane</h2>
@@ -73,7 +73,7 @@ export default function Groomsmen() {
             <p>Also, your D&D campaigns are dope.</p>
           </section>
         )
-      case 'the co host':
+      case 'thecohost':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Eddie</h2>
