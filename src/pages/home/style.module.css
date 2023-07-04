@@ -80,6 +80,17 @@ section.cruise {
   padding: calc(var(--space) * 12) 0;
 }
 
+.wedding-logo {
+  width: 200px;
+  height: auto;
+  opacity: 0.6;
+}
+.footer {
+  font-family: 'Rouge Script', cursive;
+  text-align: center;
+  padding: calc(var(--space) * 8) 0;
+}
+
 @media screen and (max-width: 1500px) {
   .title {
     font-size: calc(var(--font-size) * 4);

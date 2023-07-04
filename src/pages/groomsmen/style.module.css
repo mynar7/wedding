@@ -1,0 +1,70 @@
+.groomsmen-container {
+  background-color: #333;
+  color: #eee;
+  font-family: 'Barlow', sans-serif;
+  font-size: 22px;
+}
+.groomsmen-container a {
+  color: crimson;
+}
+section.announcement {
+  margin-bottom: calc(var(--space) * 16);
+}
+.friend {
+  font-family: 'UnifrakturCook', serif;
+  font-size: calc(var(--font-size) * 4);
+}
+.friend~h3 {
+  margin-top: -75px;
+  margin-bottom: 100px;
+}
+.title {
+  font-family: 'UnifrakturCook', serif;
+  font-size: calc(var(--font-size) * 8);
+  position: relative;
+}
+
+.groomsmen-container h2 {
+  font-family: 'UnifrakturCook', serif;
+  font-size: calc(var(--font-size) * 6);
+}
+
+.logo-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.wedding-logo {
+  margin-top: 50px;
+  width: 200px;
+  height: auto;
+  filter: grayscale() invert();
+}
+.footer {
+  background-color: #333;
+  font-family: 'UnifrakturCook', serif;
+  text-align: center;
+  padding: calc(var(--space) * 8) 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .title {
+    font-size: calc(var(--font-size) * 4);
+  }
+  .heading {
+    font-size: calc(var(--font-size) * 3);
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo-container img {
+    margin: -20px -100px;
+  }
+  .title {
+    font-size: calc(var(--font-size) * 2.5);
+  }
+  .heading {
+    font-size: calc(var(--font-size) * 2);
+  }
+}

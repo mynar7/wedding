@@ -10,8 +10,3 @@
   padding: none;
 }
 
-footer {
-  font-family: 'Rouge Script', cursive;
-  text-align: center;
-  padding: calc(var(--space) * 8) 0;
-}

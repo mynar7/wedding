@@ -1,0 +1,18 @@
+.qr-container {
+  background-color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 22px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.qr-container > div {
+  width: 400px;
+  height: 400px;
+}
+.qr-container p {
+  text-align: center;
+}
+.qr-container img {
+  display: block;
+  margin: auto;
+}
