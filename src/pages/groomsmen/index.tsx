@@ -20,15 +20,15 @@ export default function Groomsmen() {
             <p>It sucks we don't live closer, but let's not make my bachelor party the last time we get together. Keep in touch dude. At the very least let's fucking play some computer games or something... GOD!</p>
           </section>
         )
-      case 'thebadinfluence':
+      case 'thebaddude':
         return (
           <section className={[style.announcement, 'container'].join(" ")}>
             <h2 className={style.friend}>Matthew</h2>
             <h3>🤘🏍️🎸</h3>
             <p>Thanks for coming to my bachelor party.</p>
             <p>I hope you had a great time--I certainly did. I appreciate you putting the time and energy into making sure I had a good time at my bachelor party.</p>
-            <p>You've been like an older brother to me growing up, and that's changed my life in many ways from loving legos to playing guitar.</p>
-            <p>My dad has always said you were a bad influence, but I think if you weren't my cousin I would have grown up to be an insufferable stick in the mud that doesn't know how to have fun and bend the rules here and there.</p>
+            <p>You've been like an older brother to me growing up, and that's changed my life in many ways.</p>
+            <p>I think if you weren't my cousin I would have grown up to be boring and incapable of having fun; you taught me to bend the rules a little.</p>
           </section>
         )
       case 'theroommate':

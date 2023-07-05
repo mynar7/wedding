@@ -4,7 +4,7 @@ export default function Qr() {
   const groomGiftRecipients = [
     {
       name: 'Matthew',
-      url: '?recipient=thebadinfluence'
+      url: '?recipient=thebaddude'
     },
     {
       name: 'Matt',
