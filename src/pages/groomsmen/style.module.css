@@ -15,8 +15,9 @@ section.announcement {
   font-size: calc(var(--font-size) * 4);
 }
 .friend~h3 {
-  margin-top: -75px;
-  margin-bottom: 100px;
+  font-size: calc(var(--font-size) * 2);
+  margin-top: calc(var(--space) * -8);
+  margin-bottom: calc(var(--space) * 4);
 }
 .title {
   font-family: 'UnifrakturCook', serif;
@@ -53,18 +54,28 @@ section.announcement {
   .title {
     font-size: calc(var(--font-size) * 4);
   }
-  .heading {
+  .groomsmen-container h2 {
     font-size: calc(var(--font-size) * 3);
   }
+  .friend~h3 {
+    font-size: calc(var(--font-size) * 1.25);
+    margin-top: calc(var(--space) * -4);
+    margin-bottom: calc(var(--space) * 4);
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .logo-container img {
     margin: -20px -100px;
   }
   .title {
     font-size: calc(var(--font-size) * 2.5);
   }
-  .heading {
-    font-size: calc(var(--font-size) * 2);
+  .groomsmen-container h2 {
+    font-size: calc(var(--font-size) * 2.5);
+  }
+  .friend~h3 {
+    font-size: calc(var(--font-size) * 1);
+    margin-top: calc(var(--space) * -3);
+    margin-bottom: calc(var(--space) * 4);
   }
 }
