@@ -83,6 +83,24 @@ export default function Groomsmen() {
             <p>Side note: We shouldn't give up on the podcast, my dude.</p>
           </section>
         )
+      case 'bigred':
+        return (
+          <section className={[style.announcement, 'container'].join(" ")}>
+            <h2 className={style.friend}>Valarie</h2>
+            <h3>❤️🧶🍨</h3>
+            <p>Hey sis, I know you decided not to come to the wedding, but I decided to get you something anyway.</p>
+            <p>I'm really going to miss you at the wedding.</p>
+          </section>
+        )
+      case 'woowoo':
+        return (
+          <section className={[style.announcement, 'container'].join(" ")}>
+            <h2 className={style.friend}>Chris</h2>
+            <h3>🎮🚒🥷</h3>
+            <p>It really sucks not having you at the wedding or Bachelor party.</p>
+            <p>I would have had you in the wedding party as a groomsmen, so I decided to include you in that swag anyway.</p>
+          </section>
+        )
       default:
         const gift = params.get('gift')
         return <Navigate to={`/groomsmen${gift ? "?gift=" + gift : ""}`}/>
@@ -92,27 +110,66 @@ export default function Groomsmen() {
     <div className={style.groomsmenContainer}>
       <section className={[style.announcement, 'container'].join(" ")}>
         <div className={style.logoContainer}>
-          <img className={style.beastLogo} src={beastLogo} alt="Groomsmen Logo" />
+          {
+            params.get('recipient') === 'bigred'
+              ? <img style={{width: '100%', maxWidth: '800px', margin: '20px 0'}} className={style.weddingLogo} src={weddingLogo} alt="Groomsmen Logo" />
+              : <img className={style.beastLogo} src={beastLogo} alt="Groomsmen Logo" />
+          }
+          
         </div>
-        <h1 className={style.title}>You Answered the Call ⚔️</h1>
-        <p>In life, a lot of people will let you down. But you didn't let me down, you showed up.</p>
-        <p>This is my small way of saying thanks.</p>
+        {
+          (params.get('recipient') === 'bigred' || params.get('recipient') === 'woowoo')
+          ? <>
+          </>
+          : <>
+            <h1 className={style.title}>You Answered the Call ⚔️</h1>
+            <p>In life, a lot of people will let you down. But you didn't let me down, you showed up.</p>
+            <p>This is my small way of saying thanks.</p>
+          </>
+        }
       </section>
       {params.get('recipient') && getMessage()}
       {
         params.get('gift') === '1' &&
-          <section className={[style.announcement, 'container'].join(" ")}>
-            <h2>🎮</h2>
-            <p>Video games have always been a big deal for me. I have a lot of fond memories centered around staring at a CRT and smashing buttons with my friends and family. I wanted to share some of those memories with you through this gift.</p>
-            <p>Inside your box, (among the other knick-knacks) you'll find a portable game console and case.</p>
-            <p>The case is a custom leather case that I designed myself and commissioned a leatherworker to build specifically for this occasion.</p>
-            <p>The game console is a Miyoo Mini Plus, onto which I've installed a custom firmware called <a href="https://github.com/OnionUI/Onion">OnionOS</a>. I've also installed somewhere around 10,000 arcade and console games from Atari on up to Playstation 1.</p>
-            <p>There's also some ports of PC games included under the PORTS folder. In there you'll find fun stuff like Doom, Duke Nukem, Cave Story, and even a port of Diablo 1 (<a href="https://github.com/diasurgical/devilutionX/wiki/Game-Controller-Scheme">here's the controls for that</a>).</p>
-            <p>Outside of N64 (except for Mario 64 in the Ports section), if you enjoyed a game released before 2000, it's probably on there.</p>
-            <p>For the most part, using the device is fairly straightforward. <a href="https://github.com/OnionUI/Onion/wiki/Global-Shortcuts">You can find the controls for Onion here</a>. If you want to dig deeper, <a href="https://github.com/OnionUI/Onion/wiki/Features">here's the feature list and more info</a>. In general though, you should just be able to power it on and jump into your favorite game without much fuss.</p>
-            <p>Anyway, if you enjoy it (and I hope you do), let me know because I put a ton of hours into getting everything set up.</p>
-          </section>
+          <>
+            <section className={[style.announcement, 'container'].join(" ")}>
+              <h2>🎮</h2>
+              <p>Video games have always been a big deal for me. I have a lot of fond memories centered around staring at a CRT and smashing buttons with my friends and family. I wanted to share some of those memories with you through this gift.</p>
+              <p>Inside your box, (among the other knick-knacks) you'll find a portable game console and case.</p>
+              <p>The case is a custom leather case that I designed myself and commissioned a leatherworker to build specifically for this occasion.</p>
+              <p>The game console is a Miyoo Mini Plus, onto which I've installed a custom firmware called <a href="https://github.com/OnionUI/Onion">OnionOS</a>. I've also installed somewhere around 10,000 arcade and console games from Atari on up to Playstation 1.</p>
+              <p>There's also some ports of PC games included under the PORTS folder. In there you'll find fun stuff like Doom, Duke Nukem, Cave Story, and even a port of Diablo 1 (<a href="https://github.com/diasurgical/devilutionX/wiki/Game-Controller-Scheme">here's the controls for that</a>).</p>
+              <p>Outside of N64 (except for Mario 64 in the Ports section), if you enjoyed a game released before 2000, it's probably on there.</p>
+              <p>For the most part, using the device is fairly straightforward. <a href="https://github.com/OnionUI/Onion/wiki/Global-Shortcuts">You can find the controls for Onion here</a>. If you want to dig deeper, <a href="https://github.com/OnionUI/Onion/wiki/Features">here's the feature list and more info</a>. In general though, you should just be able to power it on and jump into your favorite game without much fuss.</p>
+              <p>Anyway, if you enjoy it (and I hope you do), let me know because I put a ton of hours into getting everything set up.</p>
+            </section>
+            <section className={[style.announcement, 'container', style.faq].join(" ")}>
+              <h2 id="questions-and-answers">Q&A</h2> 
+              <ul className="center">
+                <li>
+                  <p>How do I exit and/or save a game?</p>
+                  <p>You can save games that have a save feature normally. However, if you use the power button and shut the device off, it will save and then resume the game when you power the device back on.<br/><br/>You can manually save/load game states by entering the Retroarch menu by holding the menu button and pressing select. You can get out of Retroarch by using the "resume" option in that menu.<br/><br/>If you want to exit a game, you can use the menu button to return to the menu, which should also create a save state (Note that this won't work for games in the "Arcade" category, which must be saved/loaded manually).</p>
+                </li>
+                <li>
+                  <p>What are these leather cases?</p>
+                  <p>I commissioned a leatherworker to create custom leather cases that I designed. <a href="https://www.etsy.com/shop/deathRATTLER">You can find his store here if you'd like to hire him.</a> Aside from looking cool, the case should protect the device from getting scuffed up in a bag or in your pocket. Just be careful not to forget it's in your back pocket and sit on it on accident or something.</p>
+                </li>
+                <li>
+                  <p>Do I need a screen protector?</p>
+                  <p>There should be one included in the box for you to apply. I would also recommend inserting the device into the case with the screen facing away from the magnetic enclosure just in case.</p>
+                </li>
+                <li>
+                  <p>Why are there no Nintendo 64 games?</p>
+                  <p>Unfortunately, the device doesn't really have enough horsepower to emulate N64. Also, the controls don't really support the N64 control scheme. <br/><br/>However, Super Mario 64 was compiled from source recently (with modified controls) and I was at least able to include that under the PORTs section.</p>
+                </li>
+                <li>
+                  <p>Why is there an extra SD card included?</p>
+                  <p>That is the original SD card the device came with. The quality control on those original cards is spotty and the included operating system leaves a lot to be desired. I upgraded the card on each device to a reputable brand and installed a custom linux firmware that is better supported and regularly updated.</p>
+                </li>
+              </ul>
+            </section>
 
+          </>
       }
       <footer className={style.footer}>
         <p>Cheers and Love,<br/>Lee</p>

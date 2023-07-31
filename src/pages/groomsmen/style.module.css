@@ -43,6 +43,41 @@ section.announcement {
   height: auto;
   filter: grayscale() invert();
 }
+/* section.faq h2 { */
+/*   color: var(--oddcolor-dark) */
+/* } */
+section.faq ul{
+  max-width: 800px;
+  list-style: none;
+  padding-left: 0;
+  display: block;
+  margin: auto;
+}
+section.faq ul>li>p:first-child {
+  /* color: var(--oddcolor-dark); */
+}
+section.faq ul>li>p:last-child {
+  font-style: italic;
+}
+section.faq ul>li>p:first-child:before,
+section.faq ul>li>p:last-child:before {
+  content: "Q: ";
+  font-weight: bold;
+  font-style: normal;
+}
+section.faq ul>li>p:last-child:before {
+  content: "A: ";
+}
+section.faq ul>li {
+  margin-bottom: calc(var(--space) * 3);
+}
+section.faq ul>li:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 100%;
+  border-bottom: 1px dotted crimson;
+  padding-top: var(--space);
+}
 .footer {
   background-color: #333;
   font-family: 'UnifrakturCook', serif;
